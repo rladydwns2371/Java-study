@@ -1,0 +1,91 @@
+package com.wanted.oop.c_abstaction.dto;
+
+public class MemberDTO {
+    /*comment. DTO의 역할
+    *  회원을 추상화하여 회원정보를 구성한다.
+    * */
+    private int no; // 회원 번호
+    private String name; // 회원 이름
+    private int age; //회원 나이
+    private String gender; // 회원 성별
+    private double height; // 키
+    private double isActivated; // 회원 활성화 여부
+
+    /*
+    * 필드가 private 접근 제한자로 외부 접근이 제한 되어 있다.
+    * 그렇기 때문에 우리는 값을 초기화하거나, 조회할 때간접적으로
+    * 접근할 수 있는 메서드를 구성해야 한다.
+    * */
+
+    /*comment. 설정자(setter)/ 접근자(getter)는 실무에서 암묵적으로
+    *  통용되는 작성 규칙이 있다.
+    * - setter 작성 규칙
+    * [표현식]
+    * public void set 필드명(매개변수){
+    *   필드 = 매개변수;}
+    *
+    * -getter 작성 규칙
+    * [표현식]
+    * public 반환형 get 필드명(){
+    *   return 반환값;}*/
+
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "no=" + no +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", height=" + height +
+                ", isActivated=" + isActivated +
+                '}';
+    }
+
+    public int getNo() {
+        return no;
+    }
+
+    public void setNo(int no) {
+        this.no = no;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getIsActivated() {
+        return isActivated;
+    }
+
+    public void setIsActivated(double isActivated) {
+        this.isActivated = isActivated;
+    }
+}
