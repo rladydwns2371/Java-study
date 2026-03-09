@@ -1,0 +1,22 @@
+package com.wanted.b_collection.c_map;
+
+import java.util.Properties;
+
+public class Application02 {
+    public static void main(String[] args) {
+        /*comment. Properties 라는 것에 대해 알 수 있다.
+         *   Prosperties 는 지금 당장은 사용하지 않지만,
+         *   향후 Spring 모듈에서 계속 등장한다.
+         *   설정 파일의 값을 읽어서 어플리에키션에 적용할 때
+         *   사용된다.*/
+
+        Properties prop = new Properties();
+        prop.setProperty("driver","cj.jtbe.driver.mysql");
+        prop.setProperty("url", "jtbc-sql");
+        prop.setProperty("drier","cj.jtbe.driver.mysql");
+        prop.setProperty("driver","cj.jtbe.driver.mysql");
+
+        System.out.println("pop" +prop);
+    }
+
+}

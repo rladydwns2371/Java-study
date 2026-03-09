@@ -23,7 +23,7 @@ public class Application01 {
         hset.add("grafane");
         hset.add("grafane");
 
-        System.out.println("hest = "+hset);
+        System.out.println("hset = "+hset);
 
         //값 꺼내는 대표적인 방법
         //Iterator 클래스의 iterator() 메소드 활용해서 연속 처리
